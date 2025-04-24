@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="md:col-span-2">
               <div className="flex items-center mb-4">
                 <Zap size={32} className="text-emerald-400 mr-2" />
-                <span className="font-bold text-xl">Morningside AI</span>
+                <span className="font-bold text-xl">Convers AI</span>
               </div>
               
               <p className="text-gray-400 mb-6 max-w-sm">
@@ -29,8 +29,8 @@ const Footer = () => {
                   <Mail size={20} className="text-emerald-400 flex-shrink-0 mt-1" />
                   <div>
                     <p className="text-sm text-gray-400">Contact</p>
-                    <a href="mailto:support@morningside.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                      support@morningside.ai
+                    <a href="mailto:support@Convers.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                      support@Convers.ai
                     </a>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-            <p>© {new Date().getFullYear()} Morningside AI. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Convers AI. All rights reserved.</p>
           </div>
         </div>
       </div>

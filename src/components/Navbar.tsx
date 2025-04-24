@@ -18,7 +18,7 @@ const Navbar = ({ scrolled }: NavbarProps) => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Zap size={28} className="text-white" />
-            <span className="font-medium text-lg text-white ml-3">Morningside</span>
+            <span className="font-medium text-lg text-white ml-3">Convers</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
