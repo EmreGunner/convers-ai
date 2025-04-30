@@ -6,7 +6,7 @@ const Services = () => {
   
   const services = [
     {
-      icon: <Bot size={24} />,
+      icon: <Bot className="w-6 h-6" />,
       title: "AI Lead Generation",
       description: "Our AI systems automatically find and filter high-fit prospects, then engage them with personalized messages that sound like you. We handle the entire process from identification to conversation.",
       features: [
@@ -17,7 +17,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <Users size={24} />,
+      icon: <Users className="w-6 h-6" />,
       title: "Custom AI Agents",
       description: "We build autonomous AI agents that work behind the scenes to engage prospects, answer questions, and nurture leads - all while maintaining your unique voice and values.",
       features: [
@@ -28,7 +28,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <PieChart size={24} />,
+      icon: <PieChart className="w-6 h-6" />,
       title: "Analytics & Optimization",
       description: "Our systems continuously learn from interactions, improving messaging and targeting over time for better results with less maintenance.",
       features: [
@@ -39,7 +39,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <MessageSquare size={24} />,
+      icon: <MessageSquare className="w-6 h-6" />,
       title: "Seamless Integration",
       description: "We integrate with your existing CRM, email, and communication tools, ensuring a smooth flow of information and preventing any disruption to your current processes.",
       features: [
@@ -52,26 +52,26 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="text-emerald-600">What We Build</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">What We Build</span>
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-300">
               We set up a done-for-you AI lead gen system that works while you focus on delivery
             </p>
           </div>
           
-          <div className="flex flex-wrap border-b border-gray-200 mb-10">
+          <div className="flex flex-wrap justify-center gap-2 mb-10 bg-white/5 p-2 rounded-xl backdrop-blur-sm">
             {services.map((service, index) => (
               <button
                 key={index}
-                className={`flex items-center px-4 py-3 font-medium text-sm transition-colors focus:outline-none sm:px-6 ${
+                className={`flex items-center px-4 py-3 font-medium transition-all rounded-lg ${
                   activeTab === index
-                    ? "border-b-2 border-emerald-600 text-emerald-600"
-                    : "text-gray-600 hover:text-emerald-600"
+                    ? "bg-gradient-to-r from-emerald-500 to-emerald-600 text-white shadow-lg"
+                    : "bg-white/5 text-gray-300 hover:bg-white/10"
                 }`}
                 onClick={() => setActiveTab(index)}
               >
@@ -81,15 +81,15 @@ const Services = () => {
             ))}
           </div>
           
-          <div className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
+          <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-2xl p-8 shadow-xl">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mr-4">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-blue-500 flex items-center justify-center text-white mr-4">
                 {services[activeTab].icon}
               </div>
               <h3 className="text-xl font-bold">{services[activeTab].title}</h3>
             </div>
             
-            <p className="text-gray-700 mb-8">{services[activeTab].description}</p>
+            <p className="text-gray-300 mb-8">{services[activeTab].description}</p>
             
             <div className="grid md:grid-cols-2 gap-4">
               {services[activeTab].features.map((feature, index) => (

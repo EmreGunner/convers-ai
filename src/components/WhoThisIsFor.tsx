@@ -56,8 +56,7 @@ const WhoThisIsFor = () => {
 
           <div className="mt-12 bg-primary-400/10 p-8 rounded-xl text-center">
             <p className="text-xl text-white">
-              If you're doing good work but need more predictable, qualified conversations — 
-              without the manual grind — let's talk.
+             If your problem on lead generation but you dont have problem on delivering good service  — let's talk.
             </p>
             <a 
               href="#contact" 
